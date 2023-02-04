@@ -5,11 +5,119 @@
     box-sizing: border-box;
     padding: 0;
     margin:0;
-};
+}
 html{
     font-size: 62.5%;
+    font-family:'Roboto', sans-serif;
 }
 
 header{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+header .title-page{
+    font-weight: bolder;
+    color: #373333 ;
+}
+header .nav-bar {
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+header  .icon-menu{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(../assets/icons/menu.svg);
+    background-size: cover;
+    margin-right: 80px;
+}
+header ul .icon-search{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(../assets/icons/search.svg);
+    background-size: cover;
+    margin-left: 80px;
+}
+main .img-container{
+    width: 100%;
+    min-height: 250px;
+    max-height:650 ;
+    background-image: url(../assets/img/pexels-ekrulila-2255349.jpg);
+    background-size: cover;
+}
+main .text-container{
+    height: auto;
+    width: 250px;
+    color: white;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+main .text-container h2{
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    padding-bottom: 5px;
+    width: auto;
+    border-top: 2px  #86898b solid;
+    border-bottom: 2px #86898b  solid;
+    padding: 15px;
+}
+main .text-container p{
+    font-weight: 100;
+    padding-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.ingredients{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.6rem;
+    height: auto;
+}
+.ingredients .about{
+    border-bottom:2px  #86898b solid;
+    width: 100px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    line-height: 1.8;
+}
+.ingredients p{
+    padding-top: 10px;
+    line-height: 1.4;
+    font-size: 1.4rem;
+    color: #858484 ;
+}
+.ingredients .container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.ingredients .cards{
+    padding-top: 20px;
+    max-width: 250px;
+    height: auto;
+    font-size: 1.4rem;
+    padding: 20px;
+}
+.ingredients .cards img{
+    width: 100%;
+    height: 60%;
+}
+.ingredients .cards .conoce-mas{
+    margin-top:15px ;
+    border: 2px  #86898b solid ;
+    border-radius: 3px;
+    color: #858484 ;
+    background-color: white;
+    width: 120px;
+    height: 30px;
 }
