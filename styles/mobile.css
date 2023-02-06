@@ -46,7 +46,7 @@ header ul .icon-search{
 main .img-container{
     width: 100%;
     min-height: 250px;
-    max-height:650 ;
+    height: auto;
     background-image: url(../assets/img/pexels-ekrulila-2255349.jpg);
     background-size: cover;
 }
@@ -89,35 +89,77 @@ main .text-container p{
     line-height: 1.8;
 }
 .ingredients p{
-    padding-top: 10px;
+    padding: 10px 0 20px 0;
     line-height: 1.4;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #858484 ;
 }
 .ingredients .container-cards{
+    font-size: 1.6rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
+    gap: 20px;
+    margin: 0 20px 0 40px;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 .ingredients .cards{
-    padding-top: 20px;
-    max-width: 250px;
-    height: auto;
+    padding-top: 10px;
+    min-width: 280px;
+    max-width: 500px;
+    height: 400px;
     font-size: 1.4rem;
     padding: 20px;
 }
+
 .ingredients .cards img{
     width: 100%;
     height: 60%;
+} 
+.ingredients .cards h3{
+    margin-top: 15px;
+    font-size: 1.7rem;
 }
-.ingredients .cards .conoce-mas{
-    margin-top:15px ;
+.ingredients .cards .button--conocemas{
+    margin-top:10px ;
     border: 2px  #86898b solid ;
     border-radius: 3px;
     color: #858484 ;
     background-color: white;
-    width: 120px;
+    width: 120 px;
     height: 30px;
+    font-size: 1.6rem;
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+}
+.ingredients .cards .button--conocemas:hover{
+    background-color: black;
+    color: white;
+}
+.section-image--text{
+    margin-top: 50px;
+    position: relative;
+}
+.section-image--text h2{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    right: 80%;
+    color: white;
+    font-size: 2.5rem;
+    width: 150px;
+}
+.section-image--text .container-img-text {
+    background-image: url(../assets/img/pexels-onur-2957897\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 350px;
+
+}
+.main--desserts{
+   margin-top: 30px;
+
 }
