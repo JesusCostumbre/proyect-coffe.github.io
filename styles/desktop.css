@@ -93,21 +93,24 @@ p{
 .container-cards .cards{
     margin: 4rem 0;
 }
+
 .container-cards .cards h3,
 .container-cards .cards p,
 .container-cards .cards button {
     margin-top: 2rem;
 }
+
 .container-cards .cards img{
     width: 100%;
 }
 
 .container-cards .cards button{
-    width: 60%;
+    width: 90%;
     height: 3rem;
     font-size: 1.5rem;
     background-color: var(--white);
-    border: .2rem solid var(--black) ;
+    border: .2rem solid var(--black);
+    border-radius: 1rem;
 }
 
 .container-cards .cards button:hover{
@@ -121,11 +124,19 @@ p{
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
     }
+    
+    .container-cards .cards button{
+        width: 90%;
+    }
 }
 
 @media (min-width: 770px){
     .container-cards{
         display: flex;
+    }
+
+    .container-cards .cards button{
+        width: 70%;
     }
 }
 
@@ -154,12 +165,12 @@ p{
 
 .desserts{
     text-align: center;
-    height: 50rem;
+    height: auto;
     padding: 1rem;
 }
 
 .desserts img{
-    height: 50%;
+    height: 70%;
     width: 70%;
     border-radius: 100%;
 }
