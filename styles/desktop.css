@@ -20,17 +20,32 @@ body{
     box-sizing: inherit;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
+    text-transform: uppercase;
 }
 /* MAIN */
 
 h1{
+    font-size: 3.5rem;
     padding: 1.5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 2rem;
 }
 .nav{
     background-color: var(--black);
     color: var(--white);
+    padding: 1rem;
 }
 
 .nav span{
@@ -58,4 +73,64 @@ h1{
 .text-container-subtitle {
     font-size: 3.5rem;
     padding: 1.5rem;
+}
+
+.about-coffee .about-text{
+    margin-top: 2rem;
+    text-align: center;
+}
+.about-coffee .about-text p{
+    margin-top:2rem ;
+}
+
+.container-cards {
+    display: inline;
+    column-gap: 2rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+.container-cards .cards{
+    margin: 4rem 0;
+}
+.container-cards .cards h3,
+.container-cards .cards p,
+.container-cards .cards button {
+    margin-top: 2rem;
+}
+.container-cards .cards img{
+    width: 100%;
+}
+
+.container-cards .cards button{
+    width: 60%;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: var(--white);
+    border: .2rem solid var(--black) ;
+}
+
+.container-cards .cards button:hover{
+    color: var(--white);
+    background-color: black;
+    cursor: pointer;
+}
+
+@media (min-width: 480px){
+    .container-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 770px){
+    .container-cards{
+        display: flex;
+    }
+}
+
+@media (min-width: 1140px){
+    .container-cards{
+        display: flex;
+    }
 }
