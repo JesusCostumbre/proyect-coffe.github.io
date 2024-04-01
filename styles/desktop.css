@@ -134,3 +134,53 @@ p{
         display: flex;
     }
 }
+
+.main--desserts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title--desserts{
+    margin-top: 2.5rem;
+}
+
+.description--title{
+    margin: 1.5rem 0;
+}
+.container--desserts{
+    display: inline;
+}
+
+.desserts{
+    text-align: center;
+    height: 50rem;
+    padding: 1rem;
+}
+
+.desserts img{
+    height: 50%;
+    width: 70%;
+    border-radius: 100%;
+}
+
+.name-product
+{
+    margin-top: 1.5rem;
+}
+.description-product{
+    margin: 2rem 0;
+}
+@media (min-width: 480px){
+    .container--desserts{
+        display: inline;
+    }
+}
+
+@media (min-width: 800px){
+    .container--desserts{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
