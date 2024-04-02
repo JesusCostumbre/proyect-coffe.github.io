@@ -96,7 +96,7 @@ p{
 
 .container-cards .cards h3,
 .container-cards .cards p,
-.container-cards .cards button {
+.container-cards .cards .button--conocemas {
     margin-top: 2rem;
 }
 
@@ -104,16 +104,17 @@ p{
     width: 100%;
 }
 
-.container-cards .cards button{
+.container-cards .cards .button--conocemas{
     width: 90%;
     height: 3rem;
     font-size: 1.5rem;
     background-color: var(--white);
     border: .2rem solid var(--black);
     border-radius: 1rem;
+    color: black;
 }
 
-.container-cards .cards button:hover{
+.container-cards .cards .button--conocemas:hover{
     color: var(--white);
     background-color: black;
     cursor: pointer;
@@ -125,7 +126,7 @@ p{
         grid-template-columns: repeat(2, 1fr); 
     }
     
-    .container-cards .cards button{
+    .container-cards .cards .button--conocemas{
         width: 90%;
     }
 }
@@ -135,7 +136,7 @@ p{
         display: flex;
     }
 
-    .container-cards .cards button{
+    .container-cards .cards .button--conocemas{
         width: 70%;
     }
 }
